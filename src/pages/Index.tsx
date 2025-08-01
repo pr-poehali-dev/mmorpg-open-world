@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Calendar } from "@/components/ui/calendar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Icon from "@/components/ui/icon";
+import Navigation from "@/components/Navigation";
 import { useState } from "react";
 
 const Index = () => {
@@ -28,8 +29,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-blue-900 to-black text-white">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-16">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/img/07035c00-33dd-481f-8cec-93992f7fff6a.jpg')" }}
